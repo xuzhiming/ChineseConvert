@@ -7,14 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
+@interface ChineseConvert : NSObject
 
-@interface ChineseConvert : NSObject {
-	NSString*	_string_GB;
-	NSString*	_string_BIG5;
-}
-
-@property(nonatomic, strong) NSString*	string_GB;
-@property(nonatomic, strong) NSString*	string_BIG5;
--(NSString*)gbToBig5:(NSString*)srcString;
--(NSString*)big5ToGb:(NSString*)srcString;
+@property (nonatomic, strong) NSString *string_GB;
+@property (nonatomic, strong) NSString *string_BIG5;
+- (NSString *)gbToBig5:(NSString *)srcString;
+- (NSString *)big5ToGb:(NSString *)srcString;
 @end
